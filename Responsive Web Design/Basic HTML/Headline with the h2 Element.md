@@ -9,4 +9,7 @@ Add an `h2` tag that says "CatPhotoApp" to create a second HTML element below yo
 
 **SOLUTION**
 
-`<h1>Hello World</h1> <h2>CatPhotoapp</h2>`
+```
+<h1>Hello World</h1> 
+<h2>CatPhotoapp</h2>
+```
