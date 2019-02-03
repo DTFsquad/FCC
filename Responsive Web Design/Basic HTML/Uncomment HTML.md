@@ -7,7 +7,7 @@ Comments in HTML starts with `<!--`, and ends with a `-->`
 
 Uncomment your `h1`, `h2` and `p` elements.
 
-**SOLUTION
+**SOLUTION:**
 
 ```
 <h1>Hello World</h1>
