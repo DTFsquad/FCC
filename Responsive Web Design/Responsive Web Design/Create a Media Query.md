@@ -4,13 +4,29 @@ Media Queries consist of a media type, and if that media type matches the type o
 
 Here's an example of a media query that returns the content when the device's width is less than or equal to 100px:
 
-@media (max-width: 100px) { /* CSS Rules */ }
+`@media (max-width: 100px) { /* CSS Rules */ }`
 
 and the following media query returns the content when the device's height is more than or equal to 350px:
 
-@media (min-height: 350px) { /* CSS Rules */ }
+`@media (min-height: 350px) { /* CSS Rules */ }`
 
 Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.
 
+---
 
-Add a media query, so that the p tag has a font-size of 10px when the device's height is less than or equal to 800px.
+Add a media query, so that the p tag has a `font-size` of 10px when the device's height is less than or equal to 800px.
+
+**SOLUTION**
+
+```
+<style>
+  p {
+    font-size: 10px;
+  }
+  
+  /* Add media query below */
+  @media (max-height: 800px)
+</style>
+  
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>
+```
