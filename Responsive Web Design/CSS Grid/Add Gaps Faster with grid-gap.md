@@ -4,7 +4,7 @@
 
 Use `grid-gap` to introduce a `10px` gap between the rows and `20px` gap between the columns.
 
-**SOLUTION:
+**SOLUTION**
 
 ```
 <style>
