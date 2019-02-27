@@ -10,11 +10,29 @@ myTest(); // logs "foo"
 console.log(loc); // loc is not defined
 ```
 
+`loc` is not defined outside of the function.
+---
 
-loc is not defined outside of the function.
 
+Declare a local variable `myVar` inside `myLocalScope`. Run the tests and then follow the instructions commented out in the editor.
 
-Declare a local variable myVar inside myLocalScope. Run the tests and then follow the instructions commented out in the editor.
-
-Hint
+**Hint**
 Refreshing the page may help if you get stuck.
+
+**SOLUTION**
+
+```
+function myLocalScope() {
+  'use strict'; // you shouldn't need to edit this line
+  var myVar = "foo";
+  console.log(myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+
+
+// Now remove the console log line to pass the test
+
+```
