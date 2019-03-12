@@ -26,7 +26,10 @@ Write a switch statement to set `answer` for the following conditions:
 `default` - "stuff"
 
 ```
-switch (val) {
+function switchOfStuff(val) {
+  var answer = "";
+  // Only change code below this line
+  switch (val) {
     case "a":
       answer = "apple";
       break;
@@ -39,4 +42,13 @@ switch (val) {
     default:
       answer = "stuff";
   }
+  
+  
+  // Only change code above this line  
+  return answer;  
+}
+
+// Change this value to test
+switchOfStuff(1);
+
 ```
