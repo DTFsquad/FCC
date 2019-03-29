@@ -1,7 +1,8 @@
-In the previous challenge, you used a single conditional operator. You can also chain them together to check for multiple conditions.
+In the previous challenge, you used a single `conditional operator`. You can also chain them together to check for multiple conditions.
 
 The following function uses if, else if, and else statements to check multiple conditions:
 
+```
 function findGreaterOrEqual(a, b) {
   if(a === b) {
     return "a and b are equal";
@@ -13,10 +14,30 @@ function findGreaterOrEqual(a, b) {
     return "b is greater";
   }
 }
-The above function can be re-written using multiple conditional operators:
+```
 
+The above function can be re-written using multiple `conditional operators`:
+
+```
 function findGreaterOrEqual(a, b) {
   return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
 }
+```
 
-Use multiple conditional operators in the checkSign function to check if a number is positive, negative or zero.
+---
+
+Use multiple `conditional operators` in the `checkSign` function to check if a number is positive, negative or zero.
+
+**SOLUTION**
+
+```
+function checkSign(num) {
+  return (
+      num > 0 ? "positive" :
+    num < 0 ? "negative" :
+    "zero"
+  );
+}
+
+checkSign(10);
+```
