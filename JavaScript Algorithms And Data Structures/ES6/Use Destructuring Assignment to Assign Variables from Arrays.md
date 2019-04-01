@@ -4,13 +4,34 @@ One key difference between the spread operator and array destructuring is that t
 
 Destructuring an array lets us do exactly that:
 
+```
 const [a, b] = [1, 2, 3, 4, 5, 6];
 console.log(a, b); // 1, 2
-The variable a is assigned the first value of the array, and b is assigned the second value of the array.
+```
+
+The variable `a` is assigned the first value of the array, and `b` is assigned the second value of the array.
 
 We can also access the value at any index in an array with destructuring by using commas to reach the desired index:
 
+```
 const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
 console.log(a, b, c); // 1, 2, 5
+```
 
-Use destructuring assignment to swap the values of a and b so that a receives the value stored in b, and b receives the value stored in a.
+---
+
+Use destructuring assignment to swap the values of `a` and `b` so that `a` receives the value stored in `b`, and `b` receives the value stored in `a`.
+
+**SOLUTION**
+
+```
+let a = 8, b = 6;
+(() => {
+  "use strict";
+  // change code below this line
+  [a, b] = [b, a]
+  // change code above this line
+})();
+console.log(a); // should be 6
+console.log(b); // should be 8
+```
