@@ -8,5 +8,14 @@ You need to check all the usernames in a database. Here are some simple rules th
 
 3) Usernames have to be at least two characters long. A two-letter username can only use alphabet letter characters.
 
+---
 
-Change the regex userCheck to fit the constraints listed above.
+Change the regex `userCheck` to fit the constraints listed above.
+
+**SOLUTION**
+
+```
+let username = "JackOfAllTrades";
+let userCheck = /\D\w/; // Change this line
+let result = userCheck.test(username);
+```
