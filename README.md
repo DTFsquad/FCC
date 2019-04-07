@@ -1,4 +1,4 @@
-# FCC
+# FreeCodeCamp
 ```freeCodeCamp``` curriculum solutions
 
 
